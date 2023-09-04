@@ -1,0 +1,47 @@
+.card-title{
+  color: #005391;
+}
+
+.btn-primary{
+background-color: #005391!important;
+}
+
+.card-title:hover{
+  color: #0d6efd;
+}
+
+.card {
+  border: white !important;
+  border-radius: 0.375rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.capsule-button {
+    background-color: transparent;
+    border: 2px solid #007bff; 
+    border-radius: 20px; 
+    color: #007bff; 
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.capsule-button:hover {
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+
+
+
+
+
+
