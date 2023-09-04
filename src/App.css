@@ -41,7 +41,53 @@ background-color: #005391!important;
 
 
 
+.colorBlue{
+  color: #007bff;
+}
 
 
+/* Style the list container */
+.attractive-list {
+
+}
+
+/* Style individual list items */
+.list-item {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-bottom: 5px; /* Add spacing between items */
+  color: #333; /* Default text color */
+}
+
+/* Add different colors to each list item */
+.list-item:nth-child(1) {
+  color: #FF5733; /* Change color for the first item */
+}
+
+.list-item:nth-child(2) {
+  color: green; /* Change color for the second item */
+}
+
+.list-item:nth-child(3) {
+  color: #5733FF; /* Change color for the third item */
+}
+
+.list-item:nth-child(4) {
+  color: #FF33A6; /* Change color for the fourth item */
+}
+
+.list-item:nth-child(5) {
+  color: #33A6FF; /* Change color for the fifth item */
+}
 
 
+.orangeBottomBorder{
+ border-bottom: 3px solid orange;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black !important; 
+  border-radius: 50%;
+  padding: 10px;
+}
