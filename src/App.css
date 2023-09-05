@@ -336,3 +336,25 @@ textarea.form-control {
 .btnHover:hover{
   background-color: black!important;
 }
+
+
+.carousel-background{
+	position: relative;
+}
+
+.background-image-behind-crousal{
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+@media (max-width: 768px) {
+    /* Adjust the maximum width of the flower and phool images for smaller screens */
+    .col-md-2 img {
+      max-width: 50%; /* You can adjust this value as needed */
+    }
+  }

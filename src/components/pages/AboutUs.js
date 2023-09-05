@@ -8,8 +8,14 @@ const AboutUs = () => {
       <Header />
       <div className='mx-5 mt-5'>
         <div className='row mt-3 justify-content-center align-items-center'>
-          <div className='col-md-8'>
-            <img src='./5.jpeg' className='shadow card img-fluid' alt='Image' />
+          <div className='col-md-2 d-flex justify-content-center align-items-center'>
+          <img src='./flower.jpg' className='shadow img-fluid mt-3' alt='Image' />
+          </div>
+          <div className='col-md-8 col-12'>
+            <img src='./5.jpeg' className='shadow card img-fluid' alt='Image' style={{width:'inherit'}}/>
+          </div>
+          <div className='col-md-2 d-flex justify-content-center align-items-center'>
+          <img src='./phool.png' className='shadow img-fluid mt-3' alt='Image' />
           </div>
         </div>
         <div className='row mt-3 mb-3'>
@@ -60,8 +66,8 @@ const AboutUs = () => {
 
               <span className='mx-3 mb-2'> Our Achievements -</span>
               <ul>
-                <li className='mb-2'>In a very short period, Ramayana Foundation School has made its own place amongst other renowned Foundation Schools.</li>
-                <li className='mb-2'>Excellent results in admission to renowned schools of Bhopal.</li>
+                <li cl>In a very short period, Ramayana Foundation School has made its own place amongst other renowned Foundation Schools.</li>
+                <li>Excellent results in admission to renowned schools of Bhopal.</li>
               </ul>
 
 
