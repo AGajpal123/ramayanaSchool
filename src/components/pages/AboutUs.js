@@ -2,10 +2,11 @@ import React from 'react'
 import Header from '../layouts/Header'
 
 const AboutUs = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div>
       <Header />
-      <div className='mx-5'>
+      <div className='mx-5 mt-5'>
         <div className='row mt-3 justify-content-center align-items-center'>
           <div className='col-md-8'>
             <img src='./5.jpeg' className='shadow card img-fluid' alt='Image' />
@@ -56,21 +57,21 @@ const AboutUs = () => {
               <p className='mx-3 mt-2'>
                 The Aim of Ramayana Foundation School is to quicken the natural development of tiny-tots through an organized, systematic, child centric program of learning. Our focus is on the holistic formation of your child by way of providing modern teaching aids.
               </p>
-              <p className='mx-3'>
-                Our Achievements -
-                <ul>
-                  <li>In a very short period, Ramayana Foundation School has made its own place amongst other renowned Foundation Schools.</li>
-                  <li>Excellent results in admission to renowned schools of Bhopal.</li>
-                </ul>
+
+              <span className='mx-3 mb-2'> Our Achievements -</span>
+              <ul>
+                <li className='mb-2'>In a very short period, Ramayana Foundation School has made its own place amongst other renowned Foundation Schools.</li>
+                <li className='mb-2'>Excellent results in admission to renowned schools of Bhopal.</li>
+              </ul>
 
 
-              </p>
+
             </div>
 
           </div>
         </div>
       </div>
-
+      <p className="text-center mt-5">Copyright © {currentYear} Ramayana Foundation School</p>
     </div>
   )
 }

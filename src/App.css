@@ -91,3 +91,123 @@ background-color: #005391!important;
   border-radius: 50%;
   padding: 10px;
 }
+
+
+
+/* Unique features css */
+
+/* Reset default list styles */
+.gradient-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: li;
+}
+
+/* Style the numbers within list items */
+.gradient-list li::before {
+  content: counter(li);
+  counter-increment: li;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  margin-right: 15px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #3498db; /* Customize the number background color */
+  color: #fff; /* Customize the number color */
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px; /* Customize the font size */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transform: translateY(4px); /* Slightly raise the numbers */
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+/* Apply a hover effect to the numbers */
+.gradient-list li:hover::before {
+  background-color: #9b59b6; /* Customize the hover background color */
+  transform: translateY(0); /* Remove the raised effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  cursor: pointer;
+}
+
+/* Style the text of list items */
+.gradient-list li {
+  padding-left: 10px;
+  margin: 10px 0;
+  font-size: 16px; /* Customize the font size of list items */
+  line-height: 1.4;
+}
+
+
+
+/* features images */
+/* Create a grid layout */
+.image-grid {
+  display: flex; /* Use a flex container to display items in a row */
+  gap: 40px; /* Spacing between items */
+}
+
+/* Style each image item */
+.image-item {
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions */
+}
+
+/* Style images to fit the container */
+.image-item img {
+  width: 100%; /* Ensure the image fills its container */
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add a hover effect to the images */
+.image-item:hover {
+  transform: scale(1.05); /* Slightly scale up the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+  z-index: 1; /* Bring the hovered image to the front */
+  cursor: pointer;
+}
+
+/* Optional: Add some spacing and center the images */
+.image-item img {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+
+/* Photo Gallery */
+/* .portfolio-items-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+
+.portfolio-itemwrapper{
+  position: relative;
+  margin-right: 50px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.portfolio-img-bg{
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+    margin-top: 50px;
+    justify-content: space-between;
+} */

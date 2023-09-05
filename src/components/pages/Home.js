@@ -75,9 +75,14 @@ const Home = () => {
           <div className="carousel-inner">
             {imageSources.map((src, index) => (
               <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-                <img className="d-block mx-auto card" src={src.imgeName} alt={`Slide ${index + 1}`} />
+                <img
+                  className="d-block mx-auto img-fluid"
+                  src={src.imgeName}
+                  alt={`Slide ${index + 1}`}
+                  style={{ maxHeight: '100%', maxWidth: '100%' }}
+                />
                 <div className="carousel-caption d-none d-md-block custom-caption">
-                  <div className="custom-caption-content">
+                  <div className="custom-caption-content m-auto w-50">
                     <h5
                       style={{
                         backgroundColor: 'white',
@@ -94,6 +99,7 @@ const Home = () => {
               </div>
             ))}
           </div>
+
 
           <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
