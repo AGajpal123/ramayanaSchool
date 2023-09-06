@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Header from '../layouts/Header';
-import { FaSearchLocation, FaPhone, FaMobile } from 'react-icons/fa';
+import { FaSearchLocation, FaPhone, FaMobile, FaClosedCaptioning, FaTimes } from 'react-icons/fa';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
@@ -10,10 +10,9 @@ const Contact = () => {
     subject: '',
     message: ''
   });
-
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [state, handleSubmit] = useForm("xpzgropl");
 
-  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,19 +22,28 @@ const Contact = () => {
     });
   }
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(formData);
-  // }
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    handleSubmit(e);
+    formRef.current.reset();
+    setShowSuccessMessage(true);
+  }
+
+ const toggleTimes = ()=>{
+    setShowSuccessMessage(false)
+  }
+
+  const formRef = useRef(null);
 
   return (
     <div>
       <Header />
       <section className="ftco-section">
+
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-6 text-center mb-5">
-              <h2 className="heading-section colorBlue">''</h2>
+            <div className="col-md-6 text-center mb-5 mt-4">
+              <h2 className="heading-section colorBlue"></h2>
             </div>
           </div>
           <div className="row justify-content-center">
@@ -77,13 +85,13 @@ const Contact = () => {
                 </div>
                 <div className="row no-gutters">
                   <div className="col-md-7">
-                    <div className="contact-wrap w-100 p-md-5 p-4">
-                      <h3 className="mb-4 colorBlue orangeBottomBorder">Contact Us</h3>
+                    <div className="contact-wrap w-100">
+                      <h3 className="mb-2 colorBlue orangeBottomBorder">Contact Us</h3>
                       <div id="form-message-warning" className="mb-4"></div>
-                      <div id="form-message-success" className="mb-4">
-                        Your message was sent, thank you!
+                      <div id="form-message-success" className={`mb-2 card alert alert-success text-dark ${showSuccessMessage ? 'd-block' : 'd-none'}`}>
+                        Your message was sent, thank you! <FaTimes style={{float:'right'}} onClick={toggleTimes}/>
                       </div>
-                      <form onSubmit={handleSubmit} id="contactForm" name="contactForm" className="contactForm">
+                      <form ref={formRef} onSubmit={handleFormSubmit} id="contactForm" name="contactForm" className="contactForm">
                         <div className="row">
                           <div className="col-md-6">
                             <div className="form-group">
@@ -112,7 +120,7 @@ const Contact = () => {
                                 name="email"
                                 id="email"
                                 placeholder="Email"
-                               
+
                                 required
                               />
                               <ValidationError
@@ -131,7 +139,7 @@ const Contact = () => {
                                 name="subject"
                                 id="subject"
                                 placeholder="Subject"
-                        
+
                               />
                             </div>
                           </div>
@@ -145,7 +153,7 @@ const Contact = () => {
                                 cols="30"
                                 rows="4"
                                 placeholder="Message"
-                               
+
                               ></textarea>
                             </div>
                           </div>

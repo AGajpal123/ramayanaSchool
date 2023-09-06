@@ -8,7 +8,11 @@ const Header = () => {
         <a>
           <img src='./removeBg.png' height={'50px'} width={'50px'}/>
         </a>
-        <a className="navbar-brand" href="#">Ramayana Foundation School</a>
+        <a className="navbar-brand" style={{
+          fontFamily: 'sans-serif',
+          fontWeight: '600',
+          color:'#005391',
+        }}>Ramayana Foundation School</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
