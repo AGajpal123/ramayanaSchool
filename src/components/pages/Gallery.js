@@ -33,31 +33,34 @@ const Gallery = () => {
   };
 
   const images = [
-    { imgName: './g1.jpeg', caption: 'Holi Celebration' },
-    { imgName: './g2.jpeg', caption: 'Racing Competition' },
-    { imgName: './g3.jpeg', caption: 'Exercise Sessions' },
-    { imgName: './g4.jpeg', caption: 'Fancy Dress Competition' },
-    { imgName: './g5.jpeg', caption: 'Art and Craft Activity' },
-    { imgName: './g6.jpeg', caption: 'Handprint Activity' },
-    { imgName: './g7.jpeg', caption: 'Drawing Class' },
-    { imgName: './g8.jpeg', caption: 'Teacher\'s Day Celebration' },
-    { imgName: './g9.jpeg', caption: 'Purple Day Celebration' },
-    { imgName: './1.jpeg', caption: 'Friendship Day Celebration' },
-    { imgName: './2.jpeg', caption: 'Watermelon Day Celebration' },
-    { imgName: './3.jpeg', caption: 'Yellow Day Celebration' },
-    { imgName: './4.jpeg', caption: 'Navratri Celebration' },
-    { imgName: './g10.jpeg', caption: 'Christmas Celebration' },
-    // { imgName: './g11.jpeg' , caption : 'Picnic' },
-    // { imgName: './g12.jpeg' , caption : 'Birthday Celebration' },
-    { imgName: './g13.jpeg', caption: 'Beach Day Celebration' },
+    { imgName: './g1.jpeg', caption: 'Holi Celebration', imageName : './holi.jpg' },
+    { imgName: './g2.jpeg', caption: 'Racing Competition', imageName : './racing.jpg' },
+    { imgName: './g3.jpeg', caption: 'Exercise Sessions', imageName : './exercise.jpg' },
+    { imgName: './g4.jpeg', caption: 'Fancy Dress Competition', imageName : './fancy.jpg' },
+    { imgName: './g5.jpeg', caption: 'Art and Craft Activity' , imageName : './craft.jpg'},
+    { imgName: './g6.jpeg', caption: 'Handprint Activity', imageName : './hand.jpg' },
+    { imgName: './g7.jpeg', caption: 'Drawing Class', imageName : './drawing.jpg' },
+    { imgName: './g8.jpeg', caption: 'Teacher\'s Day Celebration' , imageName : './teacher.jpg'},
+    { imgName: './g9.jpeg', caption: 'Purple Day Celebration', imageName : './purple.jpg' },
+    { imgName: './1.jpeg', caption: 'Friendship Day Celebration', imageName : './friend.jpg' },
+    { imgName: './2.jpeg', caption: 'Watermelon Day Celebration' , imageName : './waterm.jpg'},
+    { imgName: './3.jpeg', caption: 'Yellow Day Celebration', imageName : './yellow.jpg' },
+    { imgName: './4.jpeg', caption: 'Navratri Celebration', imageName : './nav.png' },
+    { imgName: './g10.jpeg', caption: 'Christmas Celebration', imageName : './christ.jpg' },
+    { imgName: './g13.jpeg', caption: 'Beach Day Celebration', imageName : './beach.png' },
   ];
 
   const renderImageCard = (img, index) => (
     <div key={index} className='col-md-4 mb-3'>
       <div className='card mt-5' onClick={() => openModal(img)}>
         <img src={img.imgName} className='card-img-top' alt={`Image ${index + 1}`} />
-        <div className='card-body'>
-          <p className='card-text text-center' style={{ fontWeight: 'bold' }}>{img.caption}</p>
+        <div className='card-body' style={{
+        backgroundImage: `url(${img.imageName})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: img.color,
+      }}>
+          <p className='card-text text-center mt-3 mb-3' style={{ fontWeight: 'bold' }}>{img.caption}</p>
         </div>
       </div>
     </div>
