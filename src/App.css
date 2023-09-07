@@ -385,4 +385,10 @@ textarea.form-control {
       max-width: 50%; /* You can adjust this value as needed */
     }
   }
+
+  @media screen and (max-width:385px) {
+	.marginTopResponsive{
+		margin-top: 8rem !important;
+	}
+  }
   

@@ -43,7 +43,7 @@ const Features = () => {
     <div><Header />
       <div className='mx-5 mt-5'>
         <div className='row mt-3 justify-content-center align-items-center'>
-          <div class="container mt-4" style={{textAlign:'center'}}>
+          <div class="container mt-4 marginTopResponsive" style={{textAlign:'center'}}>
             <div class="row">
               <div class="col-lg-3 col-md-3 col-sm-6 col-12 images-css">
                 <img src="./11.png" alt="Image 1" className="img-fluid mb-2" />
