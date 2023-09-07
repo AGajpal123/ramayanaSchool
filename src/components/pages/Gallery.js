@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 const Gallery = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
-
+  const currentYear = new Date().getFullYear();
   const openModal = (img) => {
     setSelectedImage(img);
     setModalIsOpen(true);
@@ -100,6 +100,7 @@ const Gallery = () => {
           </div>
         )}
       </Modal>
+      <p className="text-center">Copyright © {currentYear} Ramayana Foundation School</p>
     </div>
   );
 };

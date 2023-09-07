@@ -2,6 +2,8 @@
   color: #005391;
 }
 
+
+
 .btn-primary{
 background-color: #005391!important;
 }
@@ -144,45 +146,23 @@ background-color: #005391!important;
 
 
 /* features images */
-/* Create a grid layout */
-.image-grid {
-  display: flex; /* Use a flex container to display items in a row */
-  gap: 40px; /* Spacing between items */
-}
 
-/* Style each image item */
-.image-item {
 
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions */
-}
+  .images-css{
+    margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
 
-/* Style images to fit the container */
-.image-item img {
-  width: 100%; /* Ensure the image fills its container */
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  display: block;
-  transition: transform 0.2s ease-in-out;
-}
+  /* Add a hover effect to the images */
+  img {
+    transition: transform 0.4s;
+  }
 
-/* Add a hover effect to the images */
-.image-item:hover {
-  transform: scale(1.05); /* Slightly scale up the image on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
-  z-index: 1; /* Bring the hovered image to the front */
-  cursor: pointer;
-}
-
-/* Optional: Add some spacing and center the images */
-.image-item img {
-  margin: 0 auto;
-  padding: 10px;
-}
-
+  img:hover {
+    transform: scale(1.1);
+  }
 
 
 #contactForm {
@@ -392,6 +372,11 @@ textarea.form-control {
 	font-size: 20px;
   }
   
+@media screen and (max-width:451px) {
+	.paddingTopVisibility{
+     padding-top: 5rem;
+	}
+}
 
 
 @media (max-width: 768px) {
@@ -400,3 +385,4 @@ textarea.form-control {
       max-width: 50%; /* You can adjust this value as needed */
     }
   }
+  

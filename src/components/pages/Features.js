@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../layouts/Header'
+import { FaStar } from 'react-icons/fa';
 
 const Features = () => {
   const currentYear = new Date().getFullYear();
@@ -42,24 +43,23 @@ const Features = () => {
     <div><Header />
       <div className='mx-5 mt-5'>
         <div className='row mt-3 justify-content-center align-items-center'>
-          <div className='col-md-12 mt-3'>
-            {/* <img src='./5.jpeg' className='shadow card img-fluid' alt='Image' /> */}
-            <div class="image-grid">
-              <div class="image-item">
-                <img src="./11.png" alt="Image 1"/>
+          <div class="container mt-4" style={{textAlign:'center'}}>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12 images-css">
+                <img src="./11.png" alt="Image 1" className="img-fluid mb-2" />
               </div>
-              <div class="image-item">
-                <img src="./22.png" alt="Image 2"/>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12 images-css">
+                <img src="./22.png" alt="Image 2" className="img-fluid mb-2" />
               </div>
-              <div class="image-item">
-                <img src="./33.png" alt="Image 3"/>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12 images-css">
+                <img src="./33.png" alt="Image 3" className="img-fluid mb-2" />
               </div>
-              <div class="image-item">
-                <img src="./44.png" alt="Image 4"/>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12 images-css">
+                <img src="./44.png" alt="Image 4" className="img-fluid mb-2" />
               </div>
             </div>
-
           </div>
+
         </div>
         <div className='row mt-3 mb-3'>
           <div className='col-md-9 order-md-1 order-1'>
@@ -82,11 +82,12 @@ const Features = () => {
 
           </div>
           <div className='col-md-3 order-md-2 order-2'>
-            <div className='mt-5 card'>
-              <h3 className='text-center mt-2 mb-2 colorBlue orangeBottomBorder'>Our Selections</h3>
+            <div className='mt-5 card' style={{ background: 'aliceblue' }}>
+              <h3 className='text-center mt-2 mb-3 colorBlue orangeBottomBorder'>Our Selections</h3>
               <ul>
                 {ourSelection.map((school, index) => (
-                  <li className='mb-2'>{school.name}</li>
+                  <li className='mb-2' style={{ listStyleType: 'none' }}>
+                    <FaStar className='mx-3' />{school.name}</li>
                 ))}
               </ul>
             </div>

@@ -12,7 +12,7 @@ const Contact = () => {
   });
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [state, handleSubmit] = useForm("xpzgropl");
-
+  const currentYear = new Date().getFullYear();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -173,7 +173,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="col-md-5 d-flex align-items-stretch">
-                    <img src='./plants.jpg' className='' style={{ maxWidth: '125%' }} />
+                    <img src='./plants.jpg' className='' style={{ maxWidth: '110%' }} />
                   </div>
                 </div>
               </div>
@@ -181,6 +181,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <p className="text-center">Copyright © {currentYear} Ramayana Foundation School</p>
     </div>
   )
 }
