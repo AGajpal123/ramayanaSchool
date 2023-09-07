@@ -53,7 +53,7 @@ const Gallery = () => {
   const renderImageCard = (img, index) => (
     <div key={index} className='col-md-4 mb-3'>
       <div className='card mt-5' onClick={() => openModal(img)}>
-        <img src={img.imgName} className='card-img-top image' alt={`Image ${index + 1}`} />
+        <img src={img.imgName} className='card-img-top image' alt={`Images ${index + 1}`} />
         <div className='card-body' style={{
         backgroundImage: `url(${img.imageName})`,
         backgroundSize: 'cover',

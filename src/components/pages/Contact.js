@@ -1,26 +1,26 @@
 import React, { useRef, useState } from 'react';
 import Header from '../layouts/Header';
-import { FaSearchLocation, FaPhone, FaMobile, FaClosedCaptioning, FaTimes } from 'react-icons/fa';
+import { FaSearchLocation, FaPhone, FaMobile, FaTimes } from 'react-icons/fa';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: ''
+  // });
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [state, handleSubmit] = useForm("xpzgropl");
   const currentYear = new Date().getFullYear();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  }
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value
+  //   });
+  // }
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ const Contact = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6 text-center mb-5 mt-4">
-              <h2 className="heading-section colorBlue"></h2>
+             
             </div>
           </div>
           <div className="row justify-content-center">
@@ -173,7 +173,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="col-md-5 d-flex align-items-stretch">
-                    <img src='./plants.jpg' className='image' style={{ maxWidth: '110%' }} />
+                    <img src='./plants.jpg' className='image' style={{ maxWidth: '110%' }}  alt=''/>
                   </div>
                 </div>
               </div>

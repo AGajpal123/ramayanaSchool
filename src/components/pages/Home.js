@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../layouts/Header';
 import { useNavigate } from 'react-router-dom';
-import { FaInfoCircle, FaGraduationCap, FaStar, FaCheck, FaCalendar, FaDoorOpen, FaSchool } from 'react-icons/fa';
+import { FaInfoCircle, FaStar, FaDoorOpen, FaSchool, FaGraduationCap } from 'react-icons/fa';
 
 const Home = () => {
   const currentYear = new Date().getFullYear();
@@ -67,6 +67,8 @@ const Home = () => {
         return <FaSchool className="card-icon"/>
       case 'info':
         return <FaInfoCircle className="card-icon"/>
+      default : 
+      return <FaGraduationCap className="card-icon"/>
     }
   }
 
@@ -81,7 +83,7 @@ const Home = () => {
       <div>
         <img
           src="./banner.png"
-          alt="Background Image"
+          alt=""
           className="background-image-behind-crousal"
         />
         <div className="carousel-container mx-auto mt-5" >

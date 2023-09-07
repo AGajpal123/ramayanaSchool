@@ -9,13 +9,13 @@ const AboutUs = () => {
       <div className='mx-5 mt-5'>
         <div className='row mt-5 justify-content-center align-items-center'>
           <div className='col-md-2 d-flex justify-content-center align-items-center'>
-          <img src='./flower.jpg' className='shadow img-fluid mt-3 image' alt='Image' />
+          <img src='./flower.jpg' className='shadow img-fluid mt-3 image' alt='flower.jpg' />
           </div>
           <div className='col-md-8 col-12 images-css'>
-            <img src='./5.jpeg' className='shadow card img-fluid' alt='Image' style={{width:'inherit'}}/>
+            <img src='./5.jpeg' className='shadow card img-fluid' alt='5.jpeg' style={{width:'inherit'}}/>
           </div>
           <div className='col-md-2 d-flex justify-content-center align-items-center'>
-          <img src='./phool.png' className='shadow img-fluid mt-3 image' alt='Image' />
+          <img src='./phool.png' className='shadow img-fluid mt-3 image' alt='phool.png' />
           </div>
         </div>
         <div className='row mt-3 mb-3'>
