@@ -1,97 +1,103 @@
-.card-title{
-  color: #005391;
+.card-title {
+	color: #005391;
 }
 
 
 
-.btn-primary{
-background-color: #005391!important;
+.btn-primary {
+	background-color: #005391 !important;
 }
 
-.card-title:hover{
-  color: #005391;
+.card-title:hover {
+	color: #005391;
 }
 
 .card {
-  border: white !important;
-  border-radius: 0.375rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  
+	border: white !important;
+	border-radius: 0.375rem;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s ease;
+	cursor: pointer;
+
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
 .capsule-button {
-    background-color: transparent;
-    border: 2px solid #005391; 
-    border-radius: 20px; 
-    color: #005391; 
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+	background-color: transparent;
+	border: 2px solid #005391;
+	border-radius: 20px;
+	color: #005391;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .capsule-button:hover {
-    background-color: #005391; 
-    color: #fff; 
+	background-color: #005391;
+	color: #fff;
 }
 
 
 
-.colorBlue{
-  color: #005391;
+.colorBlue {
+	color: #005391;
 }
 
 
 /* Style the list container */
-.attractive-list {
-
-}
+.attractive-list {}
 
 /* Style individual list items */
 .list-item {
-  font-size: 18px; /* Adjust the font size as needed */
-  margin-bottom: 5px; /* Add spacing between items */
-  color: #333; /* Default text color */
+	font-size: 18px;
+	/* Adjust the font size as needed */
+	margin-bottom: 5px;
+	/* Add spacing between items */
+	color: #333;
+	/* Default text color */
 }
 
 /* Add different colors to each list item */
 .list-item:nth-child(1) {
-  color: #FF5733; /* Change color for the first item */
+	color: #FF5733;
+	/* Change color for the first item */
 }
 
 .list-item:nth-child(2) {
-  color: green; /* Change color for the second item */
+	color: green;
+	/* Change color for the second item */
 }
 
 .list-item:nth-child(3) {
-  color: #5733FF; /* Change color for the third item */
+	color: #5733FF;
+	/* Change color for the third item */
 }
 
 .list-item:nth-child(4) {
-  color: #FF33A6; /* Change color for the fourth item */
+	color: #FF33A6;
+	/* Change color for the fourth item */
 }
 
 .list-item:nth-child(5) {
-  color: #33A6FF; /* Change color for the fifth item */
+	color: #33A6FF;
+	/* Change color for the fifth item */
 }
 
 
-.orangeBottomBorder{
- border-bottom: 3px solid orange;
+.orangeBottomBorder {
+	border-bottom: 3px solid orange;
 }
 
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  background-color: black !important; 
-  border-radius: 50%;
-  padding: 10px;
+	background-color: black !important;
+	border-radius: 50%;
+	padding: 10px;
 }
 
 
@@ -100,47 +106,57 @@ background-color: #005391!important;
 
 /* Reset default list styles */
 .gradient-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  counter-reset: li;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	counter-reset: li;
 }
 
 /* Style the numbers within list items */
 .gradient-list li::before {
-  content: counter(li);
-  counter-increment: li;
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  margin-right: 15px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  background-color: #005391; /* Customize the number background color */
-  color: #fff; /* Customize the number color */
-  border-radius: 50%;
-  font-weight: bold;
-  font-size: 20px; /* Customize the font size */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transform: translateY(4px); /* Slightly raise the numbers */
-  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s; /* Smooth transitions */
+	content: counter(li);
+	counter-increment: li;
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	margin-right: 15px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #005391;
+	/* Customize the number background color */
+	color: #fff;
+	/* Customize the number color */
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 20px;
+	/* Customize the font size */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	/* Add a subtle shadow */
+	transform: translateY(4px);
+	/* Slightly raise the numbers */
+	transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+	/* Smooth transitions */
 }
 
 /* Apply a hover effect to the numbers */
 .gradient-list li:hover::before {
-  background-color: orange; /* Customize the hover background color */
-  transform: translateY(0); /* Remove the raised effect on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
-  cursor: pointer;
+	background-color: orange;
+	/* Customize the hover background color */
+	transform: translateY(0);
+	/* Remove the raised effect on hover */
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+	/* Enhance the shadow on hover */
+	cursor: pointer;
 }
 
 /* Style the text of list items */
 .gradient-list li {
-  padding-left: 10px;
-  margin: 10px 0;
-  font-size: 16px; /* Customize the font size of list items */
-  line-height: 1.4;
+	padding-left: 10px;
+	margin: 10px 0;
+	font-size: 16px;
+	/* Customize the font size of list items */
+	line-height: 1.4;
 }
 
 
@@ -148,21 +164,21 @@ background-color: #005391!important;
 /* features images */
 
 
-  .images-css{
-    margin-bottom: 20px;
+.images-css {
+	margin-bottom: 20px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px;
-  }
+	border-radius: 5px;
+	padding: 10px;
+}
 
-  /* Add a hover effect to the images */
-  img {
-    transition: transform 0.4s;
-  }
+/* Add a hover effect to the images */
+.image {
+	transition: transform 0.4s;
+}
 
-  img:hover {
-    transform: scale(1.1);
-  }
+.image:hover {
+	transform: scale(1.1);
+}
 
 
 #contactForm {
@@ -170,24 +186,31 @@ background-color: #005391!important;
 		color: red;
 		font-size: 12px;
 	}
+
 	.form-control {
 		font-size: 16px;
 	}
 }
+
 #message {
 	resize: vertical;
 }
-#form-message-warning, #form-message-success {
+
+#form-message-warning,
+#form-message-success {
 	display: none;
 }
+
 #form-message-warning {
 	color: red;
 }
+
 #form-message-success {
 	color: green;
 	font-size: 18px;
 	font-weight: 500;
 }
+
 .submitting {
 	float: left;
 	width: 100%;
@@ -197,22 +220,23 @@ background-color: #005391!important;
 	font-weight: bold;
 }
 
-.contactForm{
-	.label{
+.contactForm {
+	.label {
 		color: black;
 		text-transform: uppercase;
 		font-size: 12px;
 		font-weight: 600;
 	}
-	.form-control{
+
+	.form-control {
 		border: none;
-		border-bottom: 1px solid rgba(0,0,0,.1);
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
 		padding: 0;
 	}
 }
 
 
-.img{
+.img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -221,75 +245,94 @@ background-color: #005391!important;
 .form-control {
 	height: 36px;
 	background: white;
-	color: rgba(0,0,0,.8);
+	color: rgba(0, 0, 0, .8);
 	font-size: 14px;
 	border-radius: 2px;
 	box-shadow: none !important;
-	border: 1px solid rgba(0,0,0,.1);
-	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	  color: rgba(0,0,0,.3) !important;
+	border: 1px solid rgba(0, 0, 0, .1);
+
+	&::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		color: rgba(0, 0, 0, .3) !important;
 	}
-	&::-moz-placeholder { /* Firefox 19+ */
-	  color: rgba(0,0,0,.3) !important;
+
+	&::-moz-placeholder {
+		/* Firefox 19+ */
+		color: rgba(0, 0, 0, .3) !important;
 	}
-	&:-ms-input-placeholder { /* IE 0+ */
-	  color: rgba(0,0,0,.3) !important;
+
+	&:-ms-input-placeholder {
+		/* IE 0+ */
+		color: rgba(0, 0, 0, .3) !important;
 	}
-	&:-moz-placeholder { /* Firefox 18- */
-	  color: rgba(0,0,0,.3) !important;
+
+	&:-moz-placeholder {
+		/* Firefox 18- */
+		color: rgba(0, 0, 0, .3) !important;
 	}
-	&:focus, &:active {
+
+	&:focus,
+	&:active {
 		border-color: blue !important;
 	}
 }
+
 textarea.form-control {
-	height: inherit!important;
+	height: inherit !important;
 }
 
 
-.wrapper{
+.wrapper {
 	width: 100%;
 }
-.contact-wrap{
+
+.contact-wrap {
 	background: white;
 }
 
-.info-wrap{
-	@include media-breakpoint-down(sm){
+.info-wrap {
+	@include media-breakpoint-down(sm) {
 		height: 400px;
 	}
 }
 
-.dbox{
+.dbox {
 	width: 100%;
 	margin-bottom: 25px;
-	@include media-breakpoint-down(sm){
+
+	@include media-breakpoint-down(sm) {
 		margin-bottom: 25px !important;
 		padding: 0 20px;
 	}
-	p{
+
+	p {
 		margin-bottom: 0;
-		span{
+
+		span {
 			font-weight: 500;
 			color: bisque;
 		}
-		a{
+
+		a {
 			color: blue;
 		}
 	}
-	.icon{
+
+	.icon {
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
 		background: blue;
 		margin: 0 auto;
 		margin-bottom: 20px;
-		span{
+
+		span {
 			font-size: 20px;
 			color: white;
 		}
 	}
-	.text{
+
+	.text {
 		width: 100%;
 	}
 }
@@ -301,42 +344,45 @@ textarea.form-control {
 	border-radius: 5px;
 	font-size: 14px;
 	font-weight: 400;
-	-webkit-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
-	-moz-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
-	box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	-webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
 	position: relative;
 	margin-bottom: 20px;
 	@include transition(.3s);
-	&:hover, &:active, &:focus {
+
+	&:hover,
+	&:active,
+	&:focus {
 		outline: none !important;
 	}
 
 }
 
-.btnHover:hover{
-  background-color: black!important;
+.btnHover:hover {
+	background-color: black !important;
 }
 
 
-.carousel-background{
+.carousel-background {
 	position: relative;
 }
 
-.background-image-behind-crousal{
+.background-image-behind-crousal {
 	position: absolute;
 	top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; 
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
-.icon-css{
+.icon-css {
 	font-size: 2.5rem;
-    background-color: #005391;
-    border-radius: 50%;
-    color: white;
+	background-color: #005391;
+	border-radius: 50%;
+	color: white;
 	padding: 7px;
 }
 
@@ -353,42 +399,52 @@ textarea.form-control {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 999;
-  }
-  
-  .popup-content {
+}
+
+.popup-content {
 	background-color: #fff;
 	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	text-align: center;
 	position: relative;
-  }
-  
-  .close {
+}
+
+.close {
 	position: absolute;
 	top: 10px;
 	right: 10px;
 	cursor: pointer;
 	font-size: 20px;
-  }
-  
+}
+
 @media screen and (max-width:451px) {
-	.paddingTopVisibility{
-     padding-top: 5rem;
+	.paddingTopVisibility {
+		padding-top: 5rem;
 	}
 }
 
 
 @media (max-width: 768px) {
-    /* Adjust the maximum width of the flower and phool images for smaller screens */
-    .col-md-2 img {
-      max-width: 50%; /* You can adjust this value as needed */
-    }
-  }
 
-  @media screen and (max-width:385px) {
-	.marginTopResponsive{
+	/* Adjust the maximum width of the flower and phool images for smaller screens */
+	.col-md-2 img {
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width:441px) {
+	.marginTopResponsiveGallery {
+		margin-top: 6rem !important;
+	}
+}
+
+@media screen and (max-width:385px) {
+	.marginTopResponsiveFeature {
 		margin-top: 8rem !important;
 	}
-  }
-  
+
+	.marginTopResponsiveGallery {
+		margin-top: 6rem !important;
+	}
+}

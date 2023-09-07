@@ -173,7 +173,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="col-md-5 d-flex align-items-stretch">
-                    <img src='./plants.jpg' className='' style={{ maxWidth: '110%' }} />
+                    <img src='./plants.jpg' className='image' style={{ maxWidth: '110%' }} />
                   </div>
                 </div>
               </div>

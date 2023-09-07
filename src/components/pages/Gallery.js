@@ -53,7 +53,7 @@ const Gallery = () => {
   const renderImageCard = (img, index) => (
     <div key={index} className='col-md-4 mb-3'>
       <div className='card mt-5' onClick={() => openModal(img)}>
-        <img src={img.imgName} className='card-img-top' alt={`Image ${index + 1}`} />
+        <img src={img.imgName} className='card-img-top image' alt={`Image ${index + 1}`} />
         <div className='card-body' style={{
         backgroundImage: `url(${img.imageName})`,
         backgroundSize: 'cover',
@@ -71,7 +71,7 @@ const Gallery = () => {
   return (
     <div>
       <Header />
-      <div className='row col-md-12' style={{ marginTop: '4.5rem!important' }}>
+      <div className='row col-md-12 marginTopResponsiveGallery' style={{ marginTop: '4.5rem!important' }}>
         {images.map((img, index) => renderImageCard(img, index))}
       </div>
 
