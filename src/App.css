@@ -448,3 +448,16 @@ textarea.form-control {
 		margin-top: 6rem !important;
 	}
 }
+
+@media screen and (max-width:417px) {
+	.marginTopResponsiveContact {
+		margin-top: 3rem !important;
+	}
+}
+
+@media screen and (max-width:367px) {
+	.marginTopResponsiveContact {
+		margin-top: 5rem !important;
+	}
+}
+
